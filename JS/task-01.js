@@ -1,4 +1,22 @@
 // Задание 1
+//======================decision=================\\
+const ulCategoriesRef = document.querySelectorAll(".item");
+const ulCategoriesRefLen = ulCategoriesRef.length;
+console.log(`В списке ${ulCategoriesRefLen} категории.`);
+
+let ul = document.getElementById("categories");
+let items = ul.querySelectorAll(".item");
+
+items.forEach((listItem) => {
+  let h2 = listItem.querySelector("h2");
+  let li = listItem.querySelectorAll("li");
+
+  console.log(
+    `Категория: ${h2.textContent}, Количество элементов: ${li.length}`
+  );
+});
+//================================================\\
+
 // В HTML есть список категорий ul#categories.
 {
   /* <ul id="categories">
@@ -39,10 +57,6 @@
 
 // Посчитает и выведет в консоль количество категорий в ul#categories,
 // то есть элементов li.item.Получится 'В списке 3 категории.'.
-const ulCategoriesRef = document.querySelectorAll(".item");
-console.log(ulCategoriesRef);
-const ulCategoriesRefLen = ulCategoriesRef.length;
-console.log(`В списке ${ulCategoriesRefLen} категории.`);
 
 // Для каждого элемента li.item в списке ul#categories, найдет и выведет
 // в консоль текст заголовка элемента(тега h2) и количество элементов
@@ -52,19 +66,7 @@ console.log(`В списке ${ulCategoriesRefLen} категории.`);
 
 // Категория: Животные
 // Количество элементов: 4
-
-let ul = document.getElementById("categories");
-let items = ul.querySelectorAll(".item");
-
-items.forEach((listItem) => {
-  let h2 = listItem.querySelector("h2");
-  let li = listItem.querySelectorAll("li");
-
-  console.log(
-    `Категория: ${h2.textContent}, Количество элементов: ${li.length}`
-  );
-  //console.log(`Категория: ${h2.innerText}`);
-});
+//================================================\\
 
 // console.log(items); //NodeList(3) [li.item, li.item, li.item]
 // console.log(`в списке ${items.length} категории`);
