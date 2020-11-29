@@ -1,4 +1,21 @@
 // Задание 4
+//======================decision=================\\
+let counterValue = 0;
+const valueRef = document.querySelector("#value");
+const decrementBtn = document.querySelector('button[data-action="decrement"]');
+const incrementBtn = document.querySelector('button[data-action="increment"]');
+const decrement = () => {
+  counterValue -= 1;
+  valueRef.textContent = counterValue;
+};
+const increment = () => {
+  counterValue += 1;
+  valueRef.textContent = counterValue;
+};
+decrementBtn.addEventListener("click", decrement);
+incrementBtn.addEventListener("click", increment);
+//================================================\\
+
 // Счетчик состоит из спана и кнопок, которые должны увеличивать и уменьшать значение счетчика на 1.
 
 // Создай переменную counterValue в которой будет хранится текущее значение счетчика.
