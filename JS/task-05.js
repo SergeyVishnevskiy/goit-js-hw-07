@@ -1,4 +1,14 @@
 // Задание 5
+//======================decision=================\\
+const inputNameRef = document.querySelector("#name-input");
+const outputnameRef = document.querySelector("#name-output");
+inputNameRef.addEventListener("input", (event) => {
+  if (event.target.value === "") {
+    outputnameRef.textContent = "незнакомец";
+  } else if ((outputnameRef.textContent = event.target.value));
+});
+//================================================\\
+
 // Напиши скрипт который, при наборе текста в инпуте input#name - input(событие input),
 // подставляет его текущее значение в span#name - output.
 // Если инпут пустой, в спане должна отображаться строка 'незнакомец'.
