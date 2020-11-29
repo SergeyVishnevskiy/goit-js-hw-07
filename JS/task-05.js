@@ -1,11 +1,11 @@
 // Задание 5
 //======================decision=================\\
 const inputNameRef = document.querySelector("#name-input");
-const outputnameRef = document.querySelector("#name-output");
+const outputNameRef = document.querySelector("#name-output");
 inputNameRef.addEventListener("input", (event) => {
   event.target.value === ""
-    ? (outputnameRef.textContent = "незнакомец")
-    : (outputnameRef.textContent = event.target.value);
+    ? (outputNameRef.textContent = "незнакомец")
+    : (outputNameRef.textContent = event.target.value);
 });
 //================================================\\
 
