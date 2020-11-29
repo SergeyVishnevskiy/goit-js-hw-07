@@ -19,3 +19,34 @@ img {
   display: flex;
   justify-content: center;
 }
+#counter {
+  margin: 50px;
+}
+#value {
+  color: darkblue;
+}
+.input_name {
+  margin: 50px;
+  color: teal;
+}
+#validation-input {
+  margin: 50px;
+  margin-top: 0;
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+.change_font_size {
+  margin-bottom: 50px;
+}
+#font-size-control,
+#text {
+  /* color: darkblue; */
+  margin: 0 50px;
+}
