@@ -17,7 +17,11 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-
+const createImg = (images) =>
+  `<li><img src="${images.url}" alt="${images.alt}"></li>`;
+const itemImg = images.map(createImg).join("");
+const galleryRef = document.querySelector("#gallery");
+galleryRef.insertAdjacentHTML("afterbegin", itemImg);
 //================================================\\
 
 // Напиши скрипт для создания галлереи изображений по массиву данных.
