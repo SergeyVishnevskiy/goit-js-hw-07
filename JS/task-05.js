@@ -7,6 +7,12 @@ inputNameRef.addEventListener("input", (event) => {
     ? (outputNameRef.textContent = "незнакомец")
     : (outputNameRef.textContent = event.target.value);
 });
+// inputNameRef.addEventListener("input", (event) => {
+//   outputNameRef.textContent = event.target.value;
+//   if (event.target.value === "") {
+//     outputNameRef.textContent = "незнакомец";
+//   }
+// });
 //================================================\\
 
 // Напиши скрипт который, при наборе текста в инпуте input#name - input(событие input),
